@@ -4,7 +4,29 @@
     
   </head>
 
-  <body>
-    
+  <body style="background-color:rgb(85, 85, 85); color:white; font-size:20px">
+    <div style="text-align:center;">
+      <span style="text-align:center;">The element is:</span><br></div>
+    <div style="text-align:center;margin-top:25px;margin-bottom:10px;padding:10px">
+      <span id="short" style="font-size:50px;border:2px solid black;padding:20px;background-color:rgb(206, 78, 218);">sym :3</span><br></div>
+    <div style="text-align:center;margin-top:20px;font-size:40px">
+      <button id="long_btn" style="font-size:40px"
+      onclick="document.getElementById('long_btn').setAttribute('style', 'display:none');
+      document.getElementById('long').setAttribute('style', 'text-align:center;font-size:40px;margin-top:20px')">Name</button>
+      <span id="long" style="display:none">long :3</span><br></div>
+    <div style="text-align:center;">
+      <button id="Z_btn"
+      onclick="document.getElementById('Z_btn').setAttribute('style', 'display:none');
+      document.getElementById('Z_txt').setAttribute('style', 'text-align:center;font-size:30px;margin-top:10px')">Atomic number</button>
+      <span id="Z_txt" style="display:none">atomic :3</span></div>
+    <div style="text-align:center;">
+      <button id="A_btn"
+      onclick="document.getElementById('A_btn').setAttribute('style', 'display:none');
+      document.getElementById('A_txt').setAttribute('style', 'text-align:center;font-size:30px;margin-top:10px')">Atomic mass</button>
+      <span id="A_txt" style="display:none">mass :3</span></div>
+
+
+
+    <script src="script.js"></script>
   </body>
 </html>
